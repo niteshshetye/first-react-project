@@ -28,11 +28,15 @@ const ReUsable = (props) => {
                   </div>
                 </div>
                 <div className="col-lg-6 order-1 order-lg-2 header-imp my-3">
-                  <img
-                    src={props.imgsrc}
-                    className="img-fluid animated"
-                    alt="ReUsable"
-                  />
+                  {props.imgsrc ? (
+                    <img
+                      src={props.imgsrc}
+                      className="img-fluid animated"
+                      alt="ReUsable"
+                    />
+                  ) : (
+                    <h4>Loading...</h4>
+                  )}
                 </div>
               </div>
             </div>
