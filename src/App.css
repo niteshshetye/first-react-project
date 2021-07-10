@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background-color: #fff !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: #565987 !important;
+}
+
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1px solid #565987;
+}
+
+.navbar a:hover {
+  color: #61caf3 !important;
+}
+.section-manually {
+  display: flex !important;
+  align-items: center !important;
+  height: 80vh !important;
+  margin-top: 70px;
+}
+
+.section-manually h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: black;
+}
+
+.section-manually h2 {
+  font-size: 24px;
+  color: #484848;
+}
+
+.brand-name {
+  color: #598dee !important;
+}
+
+.home-text {
+  display: flex !important;
+  justify-content: center !important ;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.btn {
+  font-weight: bold !important;
+  outline: none !important;
+  color: #598dee !important;
+  background: white !important;
+  transition: 0.5s !important;
+  border: 2px solid #598dee !important;
+  border-radius: 2rem !important;
+}
+.btn:hover {
+  color: white !important;
+  background: #598dee !important;
+}
+
+.animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.s1 {
+  /* height: 100px !important; */
+  width: 100% !important;
 }
